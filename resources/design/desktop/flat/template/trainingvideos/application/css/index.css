@@ -1,0 +1,109 @@
+.center {
+
+	text-align: center;
+
+}
+
+h1 {
+
+	padding: 25px;
+
+}
+
+#home {
+
+	border-radius: 0;
+	margin: 0;
+	display:flex;
+	flex-direction: column;
+
+}
+
+@media screen and (max-width: 500px) {
+    #home {
+
+    	margin-top: 20px;
+
+    }
+}
+
+#about {
+
+	border-radius: 0;
+	background-color: white;
+	margin: 0;
+	padding: 100px 10px 100px 10px;
+
+}
+
+@media screen and (max-width: 500px) {
+
+	#about {
+
+		padding: 70px 10px 70px 10px;
+
+	}
+
+    .valueContainer {
+        margin-bottom: 50px;
+    }
+}
+
+#how {
+
+	border-radius: 0;
+	margin: 0;
+	text-align: center;
+	padding: 60px 0 60px 0;
+
+}
+
+.info {
+
+	text-align: center;
+	margin: 0 auto;
+	width: 73%;
+
+}
+
+.lead {
+
+	padding: 0px;
+
+}
+
+.input-group {
+
+	margin-top: 20px;
+
+}
+
+#upload {
+
+	margin: 20px 0 0 0;
+
+}
+
+.dropzone {
+
+	margin: 10px;
+
+}
+
+.container {
+
+	padding: 10px;
+
+}
+
+.iconGreen {
+
+	color: #028AF4;
+
+}
+
+.valueContainer {
+
+  	text-align: center;
+
+}

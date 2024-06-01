@@ -1,0 +1,13 @@
+{
+  "name": "TrainingVideos",
+  "description": "Training Videos Pro Module by Appteam.it",
+  "type": "module",
+  "version": "3.1",
+  "dependencies": {
+    "system": {
+      "type": "SAE",
+      "version": "4.12.13"
+    },
+    "modules": []
+  }
+}

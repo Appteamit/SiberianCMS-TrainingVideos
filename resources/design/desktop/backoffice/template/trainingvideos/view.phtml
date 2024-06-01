@@ -1,0 +1,198 @@
+
+
+                <table class="options-table">
+				<tbody>
+                <tr>
+                <td class="options-category-title" colspan="4">APIKEY YouTube</td>
+                </tr>
+<tr>    
+                <td>
+                <p><label for="filter"><h5><?php echo __('Youtube ApiKey'); ?></h5></label></p>
+                <em>Es.: AIzaSyAuSgtXlYuhTrLFxinDA4Xteta6sPAmVCU</em>
+                <p></p>
+                <input type="text"  class="form-control" ng-model="header.apikey" placeholder="<?php echo __('YouTube Apikey'); ?>" />
+                </td>    
+                </tr>
+               
+                <tr>
+                <td class="options-category-title" colspan="4"><?php echo __("Header Setting"); ?></td>
+                </tr>
+
+                <tr>    
+                <td>
+                <p><label for="filter"><h5><?php echo __('Youtube Channel'); ?></h5></label></p>
+                <em>Es.: https://www.youtube.com/channel/UCViV4hyFWYJKtUhEP7DVw8w</em>
+                <p></p>
+                <input type="text"  class="form-control" ng-model="header.channel" placeholder="<?php echo __('YouTube Channel'); ?>" />
+                </td>    
+                </tr>
+               
+                <tr>
+                <td class="options-category-title" colspan="4"><?php echo __("Header Setting"); ?></td>
+                </tr>
+                
+                
+                                <tr>        
+                <td>
+                <label for="filter"><h5><?php echo __("Header"); ?></h5></label>        
+                <?php echo __("Turn on/off the header in the plugin."); ?>
+                <p></p>
+                <select type="select" class="form-control" ng-model="header.headervisible" >
+                <option value="true">On</option>		
+                <option value="false">Off</option>
+                </select>
+                </td>
+                </tr>
+                
+                
+                
+                <tr>        
+                <td>
+                <p><label for="filter"><h5><?php echo __("Header Layout"); ?></h5></label></p>    	
+                <?php echo __("Choose one of three header layouts: classic (like in YouTube), accent (pay more attention to your channel), minimal (attract more attention to your playlist)."); ?>
+                <p></p>
+                <select type="select" class="form-control" ng-model="header.headerlayout">       
+                <option value="classic">Classic</option>		
+                <option value="accent">Accent</option>        
+                <option value="minimal ">Minimal</option> 
+                </select>
+                </td>
+                </tr>
+                
+                
+                
+                                <tr>        
+                <td>
+                <p><label for="filter"><h5><?php echo __("Header Info"); ?></h5></label></p>    	
+                <?php echo __("List info types of your channel which should be displayed in the header: logo, banner, channelName, channelDescription, videosCounter, subscribersCounter, viewsCounter, subscribeButton."); ?>
+                <p></p>
+                <input type="text" class="form-control" ng-model="header.headerinfo" placeholder="<?php echo __('es.: logo, banner, channelName, channelDescription, videosCounter, subscribersCounter, viewsCounter, subscribeButton'); ?>" />     
+                </td>
+                </tr>
+                
+                                                <tr>        
+                <td>
+                <p><label for="filter"><h5><?php echo __("Channel Name"); ?></h5></label></p>    	
+                <?php echo __("Specify custom channel name instead of your channel name in YouTube."); ?>
+                <p></p>
+                <input type="text" class="form-control" ng-model="header.headerchannelname" placeholder="<?php echo __('es.: Custom Name Channel'); ?>" />     
+                </td>
+                </tr>
+                
+                                                                <tr>        
+                <td>
+                <p><label for="filter"><h5><?php echo __("Channel Description"); ?></h5></label></p>    	
+                <?php echo __("Specify custom channel description instead of your channel description in YouTube."); ?>
+                <p></p>
+                <input type="text" class="form-control" ng-model="header.headerchannelescription" placeholder="<?php echo __('es.: Custom Channel Description'); ?>" />     
+                </td>
+                </tr>
+           
+                                                                                <tr>        
+                <td>
+                <p><label for="filter"><h5><?php echo __("Channel Logo"); ?></h5></label></p>    	
+                <?php echo __("Specify custom channel logo url instead of your channel logo in YouTube. The required image size is 100x100."); ?>
+                <p></p>
+                <input type="text" class="form-control" ng-model="header.headerchannellogo" placeholder="<?php echo __('es.: https://www.spotcloud.it/mylogo100x100.png'); ?>" />     
+                </td>
+                </tr>
+           
+                                                                                                <tr>        
+                <td>
+                <p><label for="filter"><h5><?php echo __("Custom Channel Banner"); ?></h5></label></p>    	
+                <?php echo __("Specify custom channel banner url instead of your channel banner in YouTube. The required image size is 2120x352."); ?>
+                <p></p>
+                <input type="text" class="form-control" ng-model="header.headerchannelbanner" placeholder="<?php echo __('es.: https://www.spotcloud.it/mybanner2120x352.png'); ?>" />     
+                </td>
+                </tr>
+                
+                </tbody>
+</table>
+                
+                
+                
+                                <table class="options-table">
+				<tbody>
+                         <tr>
+                <td class="options-category-title" colspan="4"><?php echo __("Layout"); ?></td>
+                </tr>
+                
+                
+                 <tr>        
+                <td style="width: 50%;">
+                <p><label for="filter"><h5><?php echo __("Number Columns"); ?></h5></label></p>    	
+                <?php echo __("Number of columns in the grid."); ?>
+                <p></p>
+                <select type="select" class="form-control" ng-model="header.contentcolumns">       
+                <option value="1">1</option>		
+                <option value="2">2</option>        
+                <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option> 
+                </select>
+                </td>
+                 <td style="width: 50%;">
+                <p><label for="filter"><h5><?php echo __("Number Row"); ?></h5></label></p>    	
+                <?php echo __("Number of rows in the grid."); ?>
+                <p></p>
+                <input type="text" class="form-control" ng-model="header.contentrows" placeholder="<?php echo __('es.: 10'); ?>" /> 
+                </td>
+                </tr>
+                <tr>
+                                 <td style="width: 50%;">
+                <p><label for="filter"><h5><?php echo __("Video Layout"); ?></h5></label></p>    	
+                <?php echo __("Choose one of three video layouts: CLASSIC (video card with full information), CINEMA (pay more attention to video preview. Info displays on hover), horizontal (appropriate layout for displaying videos in 1-2 columns as a list."); ?>
+                <p></p>
+                <select type="select" class="form-control" ng-model="header.videolayout">       
+                <option value="classic">Classic</option>		
+                <option value="cinema">Cinema</option>        
+                <option value="horizontal ">Horizontal</option> 
+                </select>
+                </td>    
+                <td style="width: 50%;">
+                <label for="filter"><h5><?php echo __("Theme"); ?></h5></label>        
+                <?php echo __("Choose default or dark color scheme of plugin's UI."); ?>
+                <p></p>
+                <select type="select" class="form-control" ng-model="header.colorscheme" >
+                <option value="default">Default</option>		
+                <option value="dark">Dark</option>
+                </select>
+                </td>
+                </tr>
+                
+                                </tbody>
+</table>
+                
+                
+                                                <table class="options-table">
+				<tbody>
+                         <tr>
+                <td class="options-category-title" colspan="4"><?php echo __("Video Setting"); ?></td>
+                </tr>
+                <tr>
+                <td colspan="2">
+                <p><label for="filter"><h5><?php echo __("Video Info"); ?></h5></label></p>    	
+                <?php echo __("List info types of each video which should be displayed in the video gallery: playIcon, duration, title, date, description, viewsCounter, likesCounter, commentsCounter."); ?>
+                <p></p>
+                <input type="text" class="form-control" ng-model="header.videoinfo" placeholder="<?php echo __('es.: playIcon, duration, title, date, description, viewsCounter, likesCounter, commentsCounter'); ?>" />     
+                </td>
+                             
+                
+  		   
+    
+                <tr>        
+
+                </tr>
+            
+            
+            
+            
+            
+            </tbody>    
+            </table>
+
+<h2>New features coming soon ... </h2>
+
+    <input  ng-click="saveSettings()"  type="button" class=" btn btn-primary left" value="<?php echo __('Save'); ?>" />
+
+</sb-section>

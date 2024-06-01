@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+	 <trainingvideos_application_view>
+    	<addLayout name="admin_menu" />
+        <addLayout name="customization_default" />
+        <views>
+            <content class="core_view_default" template="trainingvideos/application/view.phtml" />
+        </views>
+    </trainingvideos_application_view>
+    <trainingvideos_backoffice_view_template>
+        <views>
+            <content class="core_view_default" template="html/default.phtml" />
+            <page_content class="core_view_default" template="trainingvideos/view.phtml" />
+        </views>
+    </trainingvideos_backoffice_view_template>
+</layout>
+
